@@ -1,0 +1,10 @@
+Clients=3
+Servers=6
+Client_0 Server_0
+Client_0 Server_1
+Client_1 Server_2
+Client_1 Server_3
+Client_0 Client_1
+Client_0 Server_4
+Client_2 Server_5
+Client_0 Client_2
