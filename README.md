@@ -90,7 +90,7 @@ The simulation is implemented using OMNeT++ and is structured to be modular and 
   - **Logging & Counters:** Tracks the number of tasks processed and logs each task reception for debugging.
   - **Configurable Behavior:** The server's behavior (honest or malicious) is determined by a module parameter.
 
-### ned/Client.ned & ned/Server.ned
+### Client.ned & Server.ned
 - **Purpose:**  
   Define the NED descriptions for the Client and Server modules. These files declare the module parameters, gate definitions, and display properties.
   
@@ -99,7 +99,7 @@ The simulation is implemented using OMNeT++ and is structured to be modular and 
   - **Gate Vectors:** Define input and output gates (e.g., `peer$o` and `peer$i`) used for dynamic connections.
   - **Visualization:** Include display hints to visually distinguish Clients and Servers in the OMNeT++ IDE.
 
-### ned/DistributedNetwork.ned
+### DistributedNetwork.ned
 - **Purpose:**  
   Describes the overall network topology, assembling client and server modules into a complete network.
   
@@ -107,7 +107,7 @@ The simulation is implemented using OMNeT++ and is structured to be modular and 
   - **Network Composition:** Specifies the number of client and server submodules using parameters such as `numClients` and `numServers`.
   - **Connectivity:** May include pre-defined connections or enable dynamic connection creation based on the topology file (`topo.txt`).
 
-### config/omnetpp.ini
+### omnetpp.ini
 - **Purpose:**  
   The OMNeT++ configuration file that defines simulation settings and parameters.
   
